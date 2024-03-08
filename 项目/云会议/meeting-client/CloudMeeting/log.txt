@@ -1,0 +1,141 @@
+2023-05-03 11:17:28 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-03 11:17:28 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x00000000000026C8
+2023-05-03 11:17:29 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000004B08
+2023-05-03 11:17:29 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x00000000000072F0
+2023-05-03 11:17:29 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000006148
+2023-05-03 11:17:30 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x0000000000006968
+2023-05-03 11:17:37 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000006148
+2023-05-03 11:17:39 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000004B08
+2023-05-03 11:17:41 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x00000000000072F0
+2023-05-03 11:17:42 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x0000000000006968
+2023-05-03 11:59:13 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-03 11:59:13 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x0000000000006EEC
+2023-05-03 11:59:13 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000005200
+2023-05-03 11:59:13 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000005DDC
+2023-05-03 11:59:13 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x00000000000083B0
+2023-05-03 11:59:14 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x0000000000006AC8
+2023-05-03 11:59:23 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x00000000000083B0
+2023-05-03 11:59:25 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000005200
+2023-05-03 11:59:27 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000005DDC
+2023-05-03 11:59:28 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x0000000000006AC8
+2023-05-16 09:52:25 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 09:52:25 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x0000000000008D04
+2023-05-16 09:52:25 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000003540
+2023-05-16 09:52:25 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x00000000000090D0
+2023-05-16 09:52:25 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x00000000000061CC
+2023-05-16 09:52:27 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x00000000000041E0
+2023-05-16 09:52:49 widget.cpp:Widget::on_connServer_clicked::411>>>failed to connenct 192.168.1.126:8888
+2023-05-16 09:53:02 widget.cpp:Widget::on_connServer_clicked::403>>>succeeed connecting to 192.168.1.38:8888
+2023-05-16 09:53:07 widget.cpp:Widget::on_createmeetBtn_clicked::253>>>create meeting
+2023-05-16 09:53:10 widget.cpp:Widget::datasolve::445>>>succeed creating room 2135
+2023-05-16 09:53:17 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 09:53:25 widget.cpp:Widget::on_openVedio_clicked::319>>>close camera
+2023-05-16 09:54:03 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 09:54:46 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x00000000000061CC
+2023-05-16 09:54:48 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000003540
+2023-05-16 09:54:48 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x00000000000090D0
+2023-05-16 09:54:49 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x00000000000041E0
+2023-05-16 10:03:31 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:03:31 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x00000000000084EC
+2023-05-16 10:03:32 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000009AF0
+2023-05-16 10:03:32 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000008D60
+2023-05-16 10:03:32 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x00000000000091E0
+2023-05-16 10:03:33 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x00000000000090B4
+2023-05-16 10:04:09 widget.cpp:Widget::on_connServer_clicked::411>>>failed to connenct 192.168.1.8:8888
+2023-05-16 10:04:21 widget.cpp:Widget::on_connServer_clicked::411>>>failed to connenct 192.168.1.8:8888
+2023-05-16 10:04:32 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x00000000000091E0
+2023-05-16 10:04:34 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000009AF0
+2023-05-16 10:04:36 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000008D60
+2023-05-16 10:04:36 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:04:36 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x0000000000001A90
+2023-05-16 10:04:38 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000007FB0
+2023-05-16 10:04:38 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x000000000000786C
+2023-05-16 10:04:38 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000004B14
+2023-05-16 10:04:39 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x0000000000001BB4
+2023-05-16 10:04:46 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000004B14
+2023-05-16 10:04:48 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000007FB0
+2023-05-16 10:04:49 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:04:49 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x00000000000061B8
+2023-05-16 10:04:50 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000009D34
+2023-05-16 10:04:50 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000009550
+2023-05-16 10:04:50 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000008D2C
+2023-05-16 10:04:51 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x0000000000009DE4
+2023-05-16 10:05:01 widget.cpp:Widget::on_connServer_clicked::411>>>failed to connenct 192.168.1.8:8888
+2023-05-16 10:05:04 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000008D2C
+2023-05-16 10:05:04 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000009D34
+2023-05-16 10:05:04 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000009550
+2023-05-16 10:05:05 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x0000000000009DE4
+2023-05-16 10:05:21 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:05:21 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x000000000000652C
+2023-05-16 10:05:22 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000008734
+2023-05-16 10:05:22 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x00000000000093C8
+2023-05-16 10:05:22 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000009EE8
+2023-05-16 10:05:23 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x00000000000076B8
+2023-05-16 10:05:29 widget.cpp:Widget::on_connServer_clicked::403>>>succeeed connecting to 192.168.1.38:8888
+2023-05-16 10:05:39 widget.cpp:Widget::datasolve::469>>>meeting not exist
+2023-05-16 10:05:43 widget.cpp:Widget::on_createmeetBtn_clicked::253>>>create meeting
+2023-05-16 10:05:44 widget.cpp:Widget::datasolve::445>>>succeed creating room 3524
+2023-05-16 10:06:07 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:06:15 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:07:15 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000009EE8
+2023-05-16 10:07:16 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000008734
+2023-05-16 10:07:17 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x00000000000093C8
+2023-05-16 10:07:17 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x00000000000076B8
+2023-05-16 10:17:19 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:17:19 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x0000000000006F40
+2023-05-16 10:17:20 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000009748
+2023-05-16 10:17:20 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000002C44
+2023-05-16 10:17:20 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000004D34
+2023-05-16 10:17:21 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x00000000000093FC
+2023-05-16 10:17:38 widget.cpp:Widget::on_connServer_clicked::403>>>succeeed connecting to 192.168.1.38:8888
+2023-05-16 10:17:41 widget.cpp:Widget::on_createmeetBtn_clicked::253>>>create meeting
+2023-05-16 10:17:42 widget.cpp:Widget::datasolve::445>>>succeed creating room 3570
+2023-05-16 10:17:46 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:17:59 widget.cpp:Widget::on_openVedio_clicked::319>>>close camera
+2023-05-16 10:18:05 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:18:17 widget.cpp:Widget::on_openVedio_clicked::319>>>close camera
+2023-05-16 10:18:28 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000004D34
+2023-05-16 10:18:30 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000009748
+2023-05-16 10:18:31 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000002C44
+2023-05-16 10:18:33 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x00000000000093FC
+2023-05-16 10:20:43 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:20:43 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x00000000000012B4
+2023-05-16 10:20:44 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000008DF0
+2023-05-16 10:20:44 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000007470
+2023-05-16 10:20:44 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000007B7C
+2023-05-16 10:20:45 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x00000000000094E4
+2023-05-16 10:20:57 widget.cpp:Widget::on_connServer_clicked::403>>>succeeed connecting to 192.168.1.38:8888
+2023-05-16 10:21:00 widget.cpp:Widget::on_createmeetBtn_clicked::253>>>create meeting
+2023-05-16 10:21:01 widget.cpp:Widget::datasolve::445>>>succeed creating room 3570
+2023-05-16 10:21:04 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:21:15 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000007B7C
+2023-05-16 10:21:16 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000008DF0
+2023-05-16 10:21:16 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000007470
+2023-05-16 10:21:17 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x00000000000094E4
+2023-05-16 10:30:36 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:30:36 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x0000000000002E50
+2023-05-16 10:30:37 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x00000000000098A0
+2023-05-16 10:30:37 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000008220
+2023-05-16 10:30:37 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000008964
+2023-05-16 10:30:38 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x000000000000922C
+2023-05-16 10:30:47 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000008964
+2023-05-16 10:30:49 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x00000000000098A0
+2023-05-16 10:30:51 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000008220
+2023-05-16 10:30:52 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x000000000000922C
+2023-05-16 10:37:13 widget.cpp:Widget::Widget::39>>>-------------------------Application Start---------------------------
+2023-05-16 10:37:13 widget.cpp:Widget::Widget::40>>>main UI thread id: 0x000000000000223C
+2023-05-16 10:37:14 sendimg.cpp:SendImg::run::17>>>start sending picture thread: 0x0000000000008060
+2023-05-16 10:37:14 sendtext.cpp:SendText::run::35>>>start sending text thread: 0x0000000000009890
+2023-05-16 10:37:14 recvsolve.cpp:RecvSolve::run::21>>>start solving data thread: 0x0000000000005F94
+2023-05-16 10:37:16 AudioOutput.cpp:AudioOutput::run::111>>>start playing audio thread 0x0000000000006660
+2023-05-16 10:38:42 widget.cpp:Widget::on_connServer_clicked::403>>>succeeed connecting to 192.168.1.38:8888
+2023-05-16 10:38:48 widget.cpp:Widget::on_createmeetBtn_clicked::253>>>create meeting
+2023-05-16 10:38:50 widget.cpp:Widget::datasolve::445>>>succeed creating room 3649
+2023-05-16 10:39:04 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:39:08 widget.cpp:Widget::on_openVedio_clicked::332>>>open camera
+2023-05-16 10:39:28 widget.cpp:Widget::on_exitmeetBtn_clicked::307>>>exit meeting
+2023-05-16 11:06:14 recvsolve.cpp:RecvSolve::run::28>>>stop solving data thread: 0x0000000000005F94
+2023-05-16 11:06:15 sendimg.cpp:SendImg::run::33>>>stop sending picture thread: 0x0000000000008060
+2023-05-16 11:06:16 sendtext.cpp:SendText::run::48>>>stop sending text thread: 0x0000000000009890
+2023-05-16 11:06:18 AudioOutput.cpp:AudioOutput::run::119>>>stop playing audio thread 0x0000000000006660
+2023-05-16 11:06:18 widget.cpp:Widget::~Widget::232>>>-------------------Application End-----------------
