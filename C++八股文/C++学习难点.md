@@ -9,11 +9,11 @@
 
 要理清两个函数的区别，还需要理解窗口模式：
 
-**模式窗口**：`<font color=red>`窗口会原地阻塞 `</font>`，只能操作该窗口，其余窗口不能再操作；只有关闭该窗口后，代码处才会获得返回值，阻塞停止，就可以操作其它界面了；
+**模式窗口**：<font color=red>窗口会原地阻塞 </font>，只能操作该窗口，其余窗口不能再操作；只有关闭该窗口后，代码处才会获得返回值，阻塞停止，就可以操作其它界面了；
 
-**半模式窗口**：`<font color=red>`窗口会原地伪阻塞 `</font>`，虽然也是只能操作该窗口，其余窗口不能再操作，但是代码会继续往下运行，所以说是伪阻塞；
+**半模式窗口**：<font color=red>窗口会原地伪阻塞 </font>，虽然也是只能操作该窗口，其余窗口不能再操作，但是代码会继续往下运行，所以说是伪阻塞；
 
-**非模式窗口**：`<font color=red>`窗口不会阻塞 `</font>`，可以随意操作；
+**非模式窗口**：<font color=red>窗口不会阻塞 </font>，可以随意操作；
 
 **exec()和show()的区别**
 
@@ -255,6 +255,47 @@ int main(){
 }
 ```
 
+## std::move
+
+[一文读懂C++右值引用和std::move - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/335994370)
+
+<font color=red>std::move就是将左值转为右值引用。</font>这样就可以重载到移动构造函数了，移动构造函数将指针赋值一下就好了，不用深拷贝了，提高性能
+
+```cpp
+class Array {
+public:
+    ......
+ 
+    // 优雅
+    Array(Array&& temp_array) {
+        data_ = temp_array.data_;
+        size_ = temp_array.size_;
+        // 为防止temp_array析构时delete data，提前置空其data_      
+        temp_array.data_ = nullptr;
+    }
+     
+ 
+public:
+    int *data_;
+    int size_;
+};
+```
+
+如何使用：
+
+```cpp
+// 例1：Array用法
+int main(){
+    Array a;
+ 
+    // 做一些操作
+    .....
+     
+    // 左值a，用std::move转化为右值
+    Array b(std::move(a));
+}
+```
+
 ## 内联函数
 
 https://www.bilibili.com/video/BV1wj411Z7kW/?spm_id_from=333.337.search-card.all.click&vd_source=62fe42e71e56edada3fb7d905bdcf92b
@@ -311,6 +352,8 @@ delete p1//此处如果不释放，就会导致内存泄漏，可以用智能指
 [shared_ptr在多线程下的安全性问题](https://blog.csdn.net/www_dong/article/details/114418454)
 
 [智能指针的原理及实现](https://blog.csdn.net/lizhentao0707/article/details/81156384)
+
+[万字长文全面详解现代C++智能指针：原理、应用和陷阱 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/672745555)
 
 **引用计数变化的几种情况**
 
@@ -706,6 +749,16 @@ https://www.bilibili.com/video/BV1Jp4y167R9?p=29&vd_source=62fe42e71e56edada3fb7
 
 ![image-20240224142425723](./assets/image-20240224142425723.png)
 
+**快速排序改进**
+
+- 三值取中
+- 小数组采用插入排序
+- 多线程
+
+[快速排序优化：一步一步优化，将快速排序的性能提升5倍 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/139056506)
+
+[快速排序的5种优化方法_快速排序优化-CSDN博客](https://blog.csdn.net/qq_19525389/article/details/81436838)
+
 ## new/delete，malloc/free
 
 - new的实现过程是：首先调用名为**operator new**的标准库函数，分配足够大的原始为类型化的内存，以保存指定类型的一个对象；接下来运行该类型的一个**构造函数**，用指定初始化构造对象；最 后返回指向新分配并构造后的的对象的指针
@@ -725,6 +778,12 @@ https://www.bilibili.com/video/BV1Jp4y167R9?p=29&vd_source=62fe42e71e56edada3fb7
   int* p = new float[2]; //编译错误
   int* p = (int*)malloc(2 * sizeof(double));//编译无错误
   ```
+
+**free()如何知道释放内存块的大小**
+
+[free()如何知道释放内存块的大小 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/98859924)
+
+举个例子：假设你用malloc需要申请100字节，实际是申请了104个字节。把前4字节存成该块内存的实际大小，并把前4字节后的地址返回给你。 free释放的时候会根据传入的地址向前偏移4个字节 从这4字节获取具体的内存块大小并释放。
 
 ## sizeof/strlen
 
@@ -882,6 +941,8 @@ int main()
 ```
 
 代码中，对两个数进行除法计算，其中除数为0。可以看到以上三个关键字，程序的执行流程是先执行 try包裹的语句块，如果执行过程中没有异常发生，则不会进入任何catch包裹的语句块，如果发生异常，则使用throw进行异常抛出，再由catch进行捕获，throw可以抛出各种数据类型的信息，代码中使 用的是数字，也可以自定义异常class。**catch根据throw抛出的数据类型进行精确捕获（不会出现类型 转换），如果匹配不到就直接报错，可以使用catch(...)的方式捕获任何异常（不推荐）。**当然，如果catch 了异常，当前函数如果不进行处理，或者已经处理了想通知上一层的调用者，可以在catch里面再throw 异常。
+
+有多个异常，catch捕获时先后顺序有什么需要注意的吗（越靠后捕获范围应该越大）
 
 ## this指针
 
@@ -1056,6 +1117,10 @@ TFTP(Trival File Transfer Protocal)：简单文件传输协议，69
 # 操作系统
 
 ## IO多路复用
+
+**IO多路复用是指使用一个线程来检查多个文件描述符（Socket）的就绪状态**，比如调用select和poll函数，传入多个文件描述符，**如果有一个文件描述符就绪，则返回，否则阻塞直到超时**。
+
+[什么是IO多路复用？为什么需要IO多路复用？_串口io复用的作用-CSDN博客](https://blog.csdn.net/Sansipi/article/details/121890431)
 
 ## 进程，线程，协程
 
